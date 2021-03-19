@@ -134,6 +134,7 @@ li:hover{
         flex-wrap: wrap;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 30px;
     }
     .container{
         flex-wrap: wrap;
@@ -152,6 +153,7 @@ li:hover{
     .menu{
         flex-direction: column;
         min-width: 100%;
+        margin-bottom: 0;
     }
 
     .content{
