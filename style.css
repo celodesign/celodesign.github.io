@@ -174,4 +174,8 @@ li:hover{
     .corpo_embalagens{
         flex-wrap: wrap;
     }
+
+    .embalagens{
+        margin-bottom: 20px;
+    }
 }
