@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produtos</title>
+
+    <link rel="stylesheet" id="astra-google-fonts-css" href="//fonts.googleapis.com/css?family=Montserrat%3A400&amp;display=fallback&amp;ver=3.0.2" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/d7ff6958c8.js" crossorigin="anonymous"></script>
+    
+    <script>
+
+        /* Menu */
+
+        function banda(){
+            document.querySelector("#area_banda").style.display = "flex";
+            document.querySelector("#area_inteiro").style.display = "none";
+            document.querySelector("#area_picado").style.display = "none";
+            document.querySelector("#area_premium").style.display = "none";
+            document.querySelector("#area_rodela").style.display = "none";
+        }
+
+        function inteiro(){
+            document.querySelector("#img_produto2").src="../imagens/inteiro/inteiro_todos.png";
+            document.querySelector("#area_inteiro").style.display = "flex";
+            document.querySelector("#area_banda").style.display = "none";
+            document.querySelector("#area_picado").style.display = "none";
+            document.querySelector("#area_premium").style.display = "none";
+            document.querySelector("#area_rodela").style.display = "none";
+        }
+
+        function picado(){
+            document.querySelector("#img_produto3").src="../imagens/picado/picado_todos.png";
+            document.querySelector("#area_picado").style.display = "flex";
+            document.querySelector("#area_banda").style.display = "none";
+            document.querySelector("#area_inteiro").style.display = "none";
+            document.querySelector("#area_premium").style.display = "none";
+            document.querySelector("#area_rodela").style.display = "none";
+        }
+
+        function premium(){
+            document.querySelector("#img_produto4").src="../imagens/premium/premium_todos.png";
+            document.querySelector("#area_premium").style.display = "flex";
+            document.querySelector("#area_banda").style.display = "none";
+            document.querySelector("#area_picado").style.display = "none";
+            document.querySelector("#area_inteiro").style.display = "none";
+            document.querySelector("#area_rodela").style.display = "none";
+        }
+
+        function rodela(){
+            document.querySelector("#area_rodela").style.display = "flex";
+            document.querySelector("#area_banda").style.display = "none";
+            document.querySelector("#area_picado").style.display = "none";
+            document.querySelector("#area_premium").style.display = "none";
+            document.querySelector("#area_inteiro").style.display = "none";
+        }
+
+        /* fim Menu */
+
+        /* Inteiro */
+        function inteiro125g(){
+            document.querySelector("#img_produto2").src="../imagens/inteiro/inteiro_125g.png";
+        }
+
+        function inteiro180g(){
+            document.querySelector("#img_produto2").src="../imagens/inteiro/inteiro_180g.png";
+        }
+
+        function inteiro300g(){
+            document.querySelector("#img_produto2").src="../imagens/inteiro/inteiro_300g.png";
+        }
+
+        function inteiro500g(){
+            document.querySelector("#img_produto2").src="../imagens/inteiro/inteiro_500g.png";
+        }
+
+        function inteiro2000g(){
+            document.querySelector("#img_produto2").src="../imagens/inteiro/inteiro_2000g.png";
+        }
+        /* Fim Inteiro */
+
+        /* Picado */
+        function picado300g(){
+            document.querySelector("#img_produto3").src="../imagens/picado/picado_300g.png";
+        }
+
+        function picado450g(){
+            document.querySelector("#img_produto3").src="../imagens/picado/picado_450g.png";
+        }
+
+        function picado1800g(){
+            document.querySelector("#img_produto3").src="../imagens/picado/picado_1800g.png";
+        }
+        /* Fim Picado */
+
+        /* Premium */
+        function premium500g(){
+            document.querySelector("#img_produto4").src="../imagens/premium/premium_500g.png";
+        }
+
+        function premium2000g(){
+            document.querySelector("#img_produto4").src="../imagens/premium/premium_2000g.png";
+        }
+        /* Fim Premium */
+
+    </script>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: 'Montserrat', sans-serif; 
+        }
+
+        body{
+            padding: 3% 0 0 0;
+        }
+
+        section{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .menu_produtos{
+            display: flex;
+        }
+
+        .menu{
+            width: 30%;
+        }
+
+        h1{
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        h1, h2{
+            color: #0C6E45;
+        }
+
+        li{
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            margin-bottom: 10px;
+            background-color: #0C6E45;
+            color: #fff;
+            border-radius: 15px;
+        }
+
+        li a{
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            width: 150px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        li:hover{
+            background-color: #A9D044;
+        }
+
+        .content{
+            display: flex;
+        }
+
+        #area_inteiro, #area_picado, #area_premium, #area_rodela{
+            display: none;
+        }
+
+        .content img{
+            width: auto;
+            height: auto;
+            border: 1px solid #e0e0e0;
+            margin-right: 5%;
+        }
+
+        .blocos{
+            margin-bottom: 25px;
+        }
+
+        .blocos h2{
+            margin-bottom: 7px;
+        }
+
+        .blocos p{
+            line-height: 1.4;
+            color: #7e7e7e;
+            text-align: justify;
+        }
+
+        .btn_embalagem{
+            width: 70px;
+            height: 70px;
+            border-radius: 70px;
+            background-color: #0C6E45;
+        }
+
+        .btn_embalagem a{
+            display: block;
+            text-align: center;
+            line-height: 70px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .btn_embalagem:hover{
+            background-color: #A9D044;
+        }   
+
+        .corpo_embalagens{
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .embalagens{
+            width: 70px;
+            margin-right: 10px;
+        }
+
+        .embalagens:last-child{
+            margin-right: 0;
+        }
+
+        .embalagens span{
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <section>
+        
+        <h1>Selecione o produto de corte</h1>
+
+            <div class="menu_produtos">
+                    <ul class="menu">
+                        <li><a onclick="banda();">Banda <i class="fas fa-chevron-right"></i></a></li>
+                        <li><a onclick="inteiro();">Inteiro <i class="fas fa-chevron-right"></i></a></li>
+                        <li><a onclick="picado();">Picado <i class="fas fa-chevron-right"></i></a></li>
+                        <li><a onclick="premium();">Premium <i class="fas fa-chevron-right"></a></i></li>
+                        <li><a onclick="rodela();">Rodela <i class="fas fa-chevron-right"></a></i></li>
+                    </ul>
+
+                <!-- Banda -->
+                <div id="area_banda" class="content">
+                    
+                    <img id="img_produto" src="../imagens/banda/banda.png" alt="Produto">
+
+                    <div>
+                        <div class="blocos">
+                        <h2>Palmito</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae fugit provident? Mollitia pariatur reiciendis, porro accusantium, impedit natus voluptatum, rem nostrum atque minima quam blanditiis excepturi quis. Numquam, placeat?</p>
+                        </div>
+
+                        <div class="blocos">
+                        <h2>Ingredientes</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusamus facilis repellendus provident, voluptatum quis cum suscipit harum dolore molestias at laborum sit possimus deleniti sequi quas. Odio, beatae culpa.</p>
+                        </div>
+
+                        <div>
+                            <h2>Disponíveis em embalagens:</h2>
+
+                            <div class="corpo_embalagens">
+
+                                <div class="embalagens">
+                                    <div class="btn_embalagem">
+                                        <a>500g</a>
+                                    </div>
+                                    <span>Pote</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Fim Banda -->
+
+                <!-- Inteiro -->
+                 <div id="area_inteiro" class="content">
+                    
+                    <img id="img_produto2" src="../imagens/inteiro/inteiro_todos.png" alt="Produto">
+
+                    <div>
+                        <div class="blocos">
+                        <h2>Palmito</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae fugit provident? Mollitia pariatur reiciendis, porro accusantium, impedit natus voluptatum, rem nostrum atque minima quam blanditiis excepturi quis. Numquam, placeat?</p>
+                        </div>
+
+                        <div class="blocos">
+                        <h2>Ingredientes</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusamus facilis repellendus provident, voluptatum quis cum suscipit harum dolore molestias at laborum sit possimus deleniti sequi quas. Odio, beatae culpa.</p>
+                        </div>
+
+                        <div>
+                            <h2>Disponíveis em embalagens:</h2>
+
+                            <div class="corpo_embalagens">
+
+                                <div class="embalagens">
+                                    <div class="btn_embalagem">
+                                        <a onclick="inteiro125g();">125g</a>
+                                    </div>
+                                    <span>Pote</span>
+                                </div>
+
+                                <div class="embalagens">
+                                    <div class="btn_embalagem">
+                                        <a onclick="inteiro180g();">180g</a>
+                                    </div>
+                                    <span>Pote</span>
+                                </div>
+
+                                <div class="embalagens">
+                                    <div class="btn_embalagem">
+                                        <a onclick="inteiro300g();">300g</a>
+                                    </div>
+                                    <span>Pote</span>
+                                </div>
+
+                                <div class="embalagens">
+                                    <div class="btn_embalagem">
+                                        <a onclick="inteiro500g();">500g</a>
+                                    </div>
+                                    <span>Pote</span>
+                                </div>
+
+                                <div class="emb alagens">
+                                    <div class="btn_embalagem">
+                                        <a onclick="inteiro2000g();">2000g</a>
+                                    </div>
+                                    <span>Pote</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Fim Inteiro -->
+
+                <!-- Picado -->
+                <div id="area_picado" class="content">
+                    
+                    <img id="img_produto3" src="../imagens/picado/picado_todos.png" alt="Produto">
+
+                    <div>
+                        <div class="blocos">
+                        <h2>Palmito</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae fugit provident? Mollitia pariatur reiciendis, porro accusantium, impedit natus voluptatum, rem nostrum atque minima quam blanditiis excepturi quis. Numquam, placeat?</p>
+                        </div>
+
+                        <div class="blocos">
+                        <h2>Ingredientes</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusamus facilis repellendus provident, voluptatum quis cum suscipit harum dolore molestias at laborum sit possimus deleniti sequi quas. Odio, beatae culpa.</p>
+                        </div>
+
+                        <div>
+                            <h2>Disponíveis em embalagens:</h2>
+
+                            <div class="corpo_embalagens">
+
+                                <div class="embalagens">
+                                    <div class="btn_embalagem">
+                                        <a onclick="picado300g();">300g</a>
+                                    </div>
+                                    <span>Pote</span>
+                                </div>
+
+                                <div class="embalagens">
+                                    <div class="btn_embalagem">
+                                        <a onclick="picado450g();">450g</a>
+                                    </div>
+                                    <span>Pote</span>
+                                </div>
+
+                                <div class="embalagens">
+                                    <div class="btn_embalagem">
+                                        <a onclick="picado1800g();">1800g</a>
+                                    </div>
+                                    <span>Pote</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Fim Picado -->
+
+                <!-- Premium -->
+                <div id="area_premium" class="content">
+                    
+                    <img id="img_produto4" src="../imagens/premium/premium_todos.png" alt="Produto Banda">
+
+                    <div>
+                        <div class="blocos">
+                        <h2>Palmito</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae fugit provident? Mollitia pariatur reiciendis, porro accusantium, impedit natus voluptatum, rem nostrum atque minima quam blanditiis excepturi quis. Numquam, placeat?</p>
+                        </div>
+
+                        <div class="blocos">
+                        <h2>Ingredientes</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusamus facilis repellendus provident, voluptatum quis cum suscipit harum dolore molestias at laborum sit possimus deleniti sequi quas. Odio, beatae culpa.</p>
+                        </div>
+
+                        <div>
+                            <h2>Disponíveis em embalagens:</h2>
+
+                            <div class="corpo_embalagens">
+
+                                <div class="embalagens">
+                                    <div class="btn_embalagem">
+                                        <a onclick="premium500g();">500g</a>
+                                    </div>
+                                    <span>Pote</span>
+                                </div>
+
+                                <div class="embalagens">
+                                    <div class="btn_embalagem">
+                                        <a onclick="premium2000g();">2000g</a>
+                                    </div>
+                                    <span>Pote</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Fim Premium -->
+
+                <!-- Rodela -->
+                <div id="area_rodela" class="content">
+                    
+                    <img id="img_produto5" src="../imagens/rodela/rodela.png" alt="Produto Banda">
+
+                    <div>
+                        <div class="blocos">
+                        <h2>Palmito</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates beatae fugit provident? Mollitia pariatur reiciendis, porro accusantium, impedit natus voluptatum, rem nostrum atque minima quam blanditiis excepturi quis. Numquam, placeat?</p>
+                        </div>
+
+                        <div class="blocos">
+                        <h2>Ingredientes</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusamus facilis repellendus provident, voluptatum quis cum suscipit harum dolore molestias at laborum sit possimus deleniti sequi quas. Odio, beatae culpa.</p>
+                        </div>
+
+                        <div>
+                            <h2>Disponíveis em embalagens:</h2>
+
+                            <div class="corpo_embalagens">
+
+                                <div class="embalagens">
+                                    <div class="btn_embalagem">
+                                        <a>500g</a>
+                                    </div>
+                                    <span>Pote</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Fim Rodela -->
+
+            </div>
+    </section>
+</body>
+</html>
