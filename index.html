@@ -22,7 +22,7 @@
             document.querySelector("#area_picado").style.display = "none";
             document.querySelector("#area_premium").style.display = "none";
             document.querySelector("#area_rodela").style.display = "none";
-        }
+        }   
 
         function inteiro(){
             document.querySelector("#img_produto2").src="../imagens/inteiro/inteiro_todos.png";
@@ -64,7 +64,7 @@
         /* Inteiro */
         function inteiro125g(){
             document.querySelector("#img_produto2").src="../imagens/inteiro/inteiro_125g.png";
-        }
+        }   
 
         function inteiro180g(){
             document.querySelector("#img_produto2").src="../imagens/inteiro/inteiro_180g.png";
@@ -127,12 +127,12 @@
             margin: 0 auto;
         }
 
-        .menu_produtos{
-            display: flex;
+        .container{
+            display: flex;  
         }
 
         .menu{
-            width: 30%;
+            margin-right: 3%;
         }
 
         h1{
@@ -182,7 +182,8 @@
             width: auto;
             height: auto;
             border: 1px solid #e0e0e0;
-            margin-right: 5%;
+            margin-right: 3%;
+            align-self: start;
         }
 
         .blocos{
@@ -248,7 +249,7 @@
         
         <h1>Selecione o produto de corte</h1>
 
-            <div class="menu_produtos">
+            <div class="container">
                     <ul class="menu">
                         <li><a onclick="banda();">Banda <i class="fas fa-chevron-right"></i></a></li>
                         <li><a onclick="inteiro();">Inteiro <i class="fas fa-chevron-right"></i></a></li>
