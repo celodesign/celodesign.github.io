@@ -132,7 +132,9 @@ li:hover{
     .menu{
         display: flex;
         flex-wrap: wrap;
-        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
     }
     .container{
         flex-wrap: wrap;
@@ -154,7 +156,6 @@ li:hover{
     }
 
     .content{
-        flex-direction: column;
         flex-wrap: wrap;
     }
 
@@ -163,6 +164,8 @@ li:hover{
     }
 
     #img_produto{
+        width: 100% !important;
+        margin: 0 auto;
         margin-top: 30px;
         margin-bottom: 30px;
     }
