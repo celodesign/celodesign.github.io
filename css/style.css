@@ -1448,6 +1448,20 @@ footer button i, footer button span{
         display: none;
     }
 
+    /* Services */
+
+    .box-services{
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 15px;
+        display: inline-table;
+    }
+
+    .texts-box-services h2{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
     /* Team and news */
 
     .content-news{
