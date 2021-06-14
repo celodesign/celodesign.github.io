@@ -1473,6 +1473,10 @@ footer button i, footer button span{
         height: auto;
     }
 
+    .texts-news h1{
+        margin-top: 0;
+    }
+
     .texts-news{
         margin-top: 20px;
     }
@@ -1508,6 +1512,18 @@ footer button i, footer button span{
     
     #whatsapp-medias .fa-whatsapp{
         margin-left: 0;
+    }
+
+    .adress-icons{
+        flex-direction: column;
+    }
+
+    .un-padding p{
+        margin: 0;
+    }
+
+    .icons-location{
+        margin-top: 20px;
     }
 
 }
